@@ -15,22 +15,22 @@ def calculate(list):
 
         # Mean for axis0, axis1 and flattened
         arr_mean_axis0 = np.mean(arr, axis=0)
-        calculations['mean'].append(arr_mean_axis0)
+        calculations['mean'].append(arr_mean_axis0.tolist())
 
         arr_mean_axis1 = np.mean(arr, axis=1)
-        calculations['mean'].append(arr_mean_axis1)
+        calculations['mean'].append(arr_mean_axis1.tolist())
 
         arr_mean_flat = np.mean(arr)
-        calculations['mean'].append(arr_mean_flat)
+        calculations['mean'].append(arr_mean_flat.tolist())
 
         # calculations['mean'] = np.array(calculations['mean']).tolist()
 
         # Variance for axis0, axis1 and flattened
         arr_var_axis0 = np.var(arr, axis=0)
-        calculations['variance'].append(arr_var_axis0)
+        calculations['variance'].append(arr_var_axis0.tolist())
 
         arr_var_axis1 = np.var(arr, axis=1)
-        calculations['variance'].append(arr_var_axis1)
+        calculations['variance'].append(arr_var_axis1.tolist())
 
         arr_var_flat = np.var(arr)
         calculations['variance'].append(arr_var_flat)
@@ -39,10 +39,10 @@ def calculate(list):
 
         # Std for axis0, axis1 and flattened
         arr_stdev_axis0 = np.std(arr, axis=0)
-        calculations['standard deviation'].append(arr_stdev_axis0)
+        calculations['standard deviation'].append(arr_stdev_axis0.tolist())
 
         arr_stdev_axis1 = np.std(arr, axis=1)
-        calculations['standard deviation'].append(arr_stdev_axis1)
+        calculations['standard deviation'].append(arr_stdev_axis1.tolist())
 
         arr_stdev_flat = np.std(arr)
         calculations['standard deviation'].append(arr_stdev_flat)
@@ -51,10 +51,10 @@ def calculate(list):
 
         # Max for axis0, axis1 and flattened
         arr_max_axis0 = np.max(arr, axis=0)
-        calculations['max'].append(arr_max_axis0)
+        calculations['max'].append(arr_max_axis0.tolist())
 
         arr_max_axis1 = np.max(arr, axis=1)
-        calculations['max'].append(arr_max_axis1)
+        calculations['max'].append(arr_max_axis1.tolist())
 
         arr_max_flat = np.max(arr)
         calculations['max'].append(arr_max_flat)
@@ -63,10 +63,10 @@ def calculate(list):
 
         # Min for axis0, axis1 and flattened
         arr_min_axis0 = np.min(arr, axis=0)
-        calculations['min'].append(arr_min_axis0)
+        calculations['min'].append(arr_min_axis0.tolist())
 
         arr_min_axis1 = np.min(arr, axis=1)
-        calculations['min'].append(arr_min_axis1)
+        calculations['min'].append(arr_min_axis1.tolist())
 
         arr_min_flat = np.min(arr)
         calculations['min'].append(arr_min_flat)
@@ -75,10 +75,10 @@ def calculate(list):
 
         # Sum for axis0, axis1 and flattened
         arr_min_axis0 = np.sum(arr, axis=0)
-        calculations['sum'].append(arr_min_axis0)
+        calculations['sum'].append(arr_min_axis0.tolist())
 
         arr_min_axis1 = np.sum(arr, axis=1)
-        calculations['sum'].append(arr_min_axis1)
+        calculations['sum'].append(arr_min_axis1.tolist())
 
         arr_min_flat = np.sum(arr)
         calculations['sum'].append(arr_min_flat)
