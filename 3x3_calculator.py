@@ -87,12 +87,10 @@ def calculate(list):
 
         # calculations = np.array(calculations['sum']).tolist()
 
-        #return calculations
-        print(calculations)
+        return calculations
 
     else:
-        print("List must contain nine numbers.")
+        raise ValueError('List must contain nine numbers.')
 
 
 calculate([0, 1, 2, 3, 4, 5, 6, 7, 8])
-# https://forum.freecodecamp.org/t/data-analysis-with-python-projects-mean-variance-standard-deviation-calculator/409025
