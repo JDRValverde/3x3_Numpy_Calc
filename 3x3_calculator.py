@@ -1,6 +1,5 @@
 import numpy as np
 
-
 def calculate(list):
     calculations = {
         'mean': [],
@@ -23,8 +22,6 @@ def calculate(list):
         arr_mean_flat = np.mean(arr)
         calculations['mean'].append(arr_mean_flat.tolist())
 
-        # calculations['mean'] = np.array(calculations['mean']).tolist()
-
         # Variance for axis0, axis1 and flattened
         arr_var_axis0 = np.var(arr, axis=0)
         calculations['variance'].append(arr_var_axis0.tolist())
@@ -34,8 +31,6 @@ def calculate(list):
 
         arr_var_flat = np.var(arr)
         calculations['variance'].append(arr_var_flat)
-
-        # calculations['variance'] = np.array(calculations['variance']).tolist()
 
         # Std for axis0, axis1 and flattened
         arr_stdev_axis0 = np.std(arr, axis=0)
@@ -47,8 +42,6 @@ def calculate(list):
         arr_stdev_flat = np.std(arr)
         calculations['standard deviation'].append(arr_stdev_flat)
 
-        # calculations['standard deviation'] = np.array(calculations['standard deviation']).tolist()
-
         # Max for axis0, axis1 and flattened
         arr_max_axis0 = np.max(arr, axis=0)
         calculations['max'].append(arr_max_axis0.tolist())
@@ -58,8 +51,6 @@ def calculate(list):
 
         arr_max_flat = np.max(arr)
         calculations['max'].append(arr_max_flat)
-
-        # calculations['max'] = np.array(calculations['max']).tolist()
 
         # Min for axis0, axis1 and flattened
         arr_min_axis0 = np.min(arr, axis=0)
@@ -71,8 +62,6 @@ def calculate(list):
         arr_min_flat = np.min(arr)
         calculations['min'].append(arr_min_flat)
 
-        # calculations['min'] = np.array(calculations['min']).tolist()
-
         # Sum for axis0, axis1 and flattened
         arr_min_axis0 = np.sum(arr, axis=0)
         calculations['sum'].append(arr_min_axis0.tolist())
@@ -82,10 +71,6 @@ def calculate(list):
 
         arr_min_flat = np.sum(arr)
         calculations['sum'].append(arr_min_flat)
-
-        # calculations['sum'] = np.array(calculations['sum']).tolist()
-
-        # calculations = np.array(calculations['sum']).tolist()
 
         return calculations
 
